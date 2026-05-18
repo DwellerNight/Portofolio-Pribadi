@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Bandara Internasional Ahmad Yani — Hanz Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="project-detail.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Hanz<span class="logo-bracket">/&gt;</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html#home"       class="nav-link">Home</a>
+        <a href="index.html#about"      class="nav-link">About</a>
+        <a href="index.html#skills"     class="nav-link">Skills</a>
+        <a href="index.html#projects"   class="nav-link active">Projects</a>
+        <a href="index.html#contact"    class="nav-link">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="lang-switcher" id="langSwitcher">
+        <button class="lang-btn active" id="btnID" onclick="setLang('id')" aria-label="Bahasa Indonesia">ID</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" id="btnEN" onclick="setLang('en')" aria-label="English">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="breadcrumb-inner">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="index.html#projects">Projects</a>
+      <span class="breadcrumb-sep">›</span>
+      <span 
+  class="breadcrumb-current"
+  data-id="Website Bandara Internasional Ahmad Yani"
+  data-en="Ahmad Yani International Airport Website">
+  Website Bandara Internasional Ahmad Yani
+</span>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- PROJECT HERO -->
+    <section class="project-hero">
+      <div class="project-hero-bg"></div>
+      <div class="project-hero-overlay"></div>
+      <div class="project-hero-content">
+
+        <!-- Hero icon — Lucide "globe" -->
+        <div class="project-hero-icon-wrap reveal">
+          <i data-lucide="globe" class="project-hero-lucide"></i>
+        </div>
+
+        <div class="project-hero-tags reveal">
+          <span class="project-hero-tag">HTML</span>
+          <span class="project-hero-tag">CSS</span>
+          <span class="project-hero-tag">JavaScript</span>
+          <span class="project-hero-tag">Web Development</span>
+        </div>
+
+        <h1 class="reveal" data-id="Website Bandara Internasional Ahmad Yani" data-en="Ahmad Yani International Airport Website">Website Bandara Internasional Ahmad Yani</h1>
+
+        <p class="project-hero-desc reveal" data-id="Website profil informatif untuk Bandara Internasional Ahmad Yani Semarang. Menampilkan informasi fasilitas, jadwal penerbangan, dan panduan penumpang menggunakan HTML, CSS, dan JavaScript murni." data-en="Informative profile website for Ahmad Yani International Airport Semarang. Displays facility information, flight schedules, and passenger guides using pure HTML, CSS, and JavaScript.">
+          Website profil informatif untuk Bandara Internasional Ahmad Yani Semarang.
+          Menampilkan informasi fasilitas, jadwal penerbangan, dan panduan penumpang
+          menggunakan HTML, CSS, dan JavaScript murni.
+        </p>
+
+        <div class="project-hero-meta reveal">
+          <div class="project-meta-item">
+            <span class="project-meta-label" data-id="Tahun" data-en="Year">Tahun</span>
+            <span class="project-meta-value">2026</span>
+          </div>
+          <div class="project-meta-item">
+            <span class="project-meta-label" data-id="Kategori" data-en="Category">Kategori</span>
+            <span class="project-meta-value">Web Development</span>
+          </div>
+          <div class="project-meta-item">
+            <span class="project-meta-label" data-id="Stack" data-en="Stack">Stack</span>
+            <span class="project-meta-value">HTML · CSS · JS</span>
+          </div>
+          <div class="project-meta-item">
+            <span class="project-meta-label" data-id="Status" data-en="Status">Status</span>
+            <span class="project-meta-value" data-id="Selesai" data-en="Completed">Selesai</span>
+          </div>
+        </div>
+
+        <div class="project-hero-actions reveal">
+          <a href="https://bandara-ahmadyani.infinityfreeapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-hero-action">
+            <i data-lucide="external-link" class="btn-icon"></i>
+            <span data-id="Lihat Website" data-en="View Website">Lihat Website</span>
+          </a>
+          <a href="https://github.com/DwellerNight/Website-Bandara-Internasional-Ahmad-Yani.git" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-hero-action">
+            <i data-lucide="cat" class="btn-icon"></i>
+            <span data-id="Lihat Kode Sumber" data-en="View Source Code">Lihat Kode Sumber</span>
+          </a>
+          <a href="index.html#projects" class="btn-back">
+            <i data-lucide="arrow-left" class="btn-icon"></i>
+            <span data-id="Kembali ke Projects" data-en="Back to Projects">Kembali ke Projects</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DETAIL BODY -->
+    <section class="detail-body">
+      <div class="detail-layout">
+
+        <!-- MAIN CONTENT -->
+        <div class="detail-main">
+
+          <!-- Ikhtisar Proyek -->
+          <article class="detail-card reveal">
+            <div class="detail-card-header">
+              <div class="detail-card-icon">
+                <i data-lucide="file-text"></i>
+              </div>
+              <h2 data-id="Ikhtisar Proyek" data-en="Project Overview">Ikhtisar Proyek</h2>
+            </div>
+            <p data-id="Proyek ini merupakan tugas web development di sekolah, di mana saya dan 2 anggota kelompok memilih Bandara Internasional Ahmad Yani sebagai subjek karena relevansinya dengan kehidupan sehari-hari masyarakat." data-en="This project was a web development assignment at school, where I and 2 group members chose Ahmad Yani International Airport as the subject due to its relevance to everyday community life.">
+              Proyek ini merupakan tugas web development di sekolah, di mana saya dan 2 anggota
+              kelompok memilih Bandara Internasional Ahmad Yani sebagai subjek karena relevansinya
+              dengan kehidupan sehari-hari masyarakat.
+            </p>
+            <p data-id="Website ini dirancang untuk memberikan informasi yang jelas dan mudah diakses bagi calon penumpang, mulai dari fasilitas yang tersedia, informasi terminal, hingga panduan check-in dan keberangkatan." data-en="This website was designed to provide clear and easily accessible information for prospective passengers, from available facilities and terminal information to check-in and departure guides.">
+              Website ini dirancang untuk memberikan informasi yang jelas dan mudah diakses bagi
+              calon penumpang, mulai dari fasilitas yang tersedia, informasi terminal, hingga
+              panduan check-in dan keberangkatan.
+            </p>
+            <p data-id="Proyek ini menjadi tonggak penting dalam perjalanan belajar web development saya dan pertama kalinya membangun website multi-halaman dengan struktur konten nyata." data-en="This project became an important milestone in my web development learning journey and the first time I built a multi-page website with real content structure.">
+              Proyek ini menjadi tonggak penting dalam perjalanan belajar web development saya dan
+              pertama kalinya membangun website multi-halaman dengan struktur konten nyata.
+            </p>
+          </article>
+
+          <!-- Apa yang Saya Lakukan -->
+          <article class="detail-card reveal">
+            <div class="detail-card-header">
+              <div class="detail-card-icon">
+                <i data-lucide="zap"></i>
+              </div>
+              <h2 data-id="Apa yang Saya Lakukan" data-en="What I Did">Apa yang Saya Lakukan</h2>
+            </div>
+            <div class="detail-list">
+              <div class="detail-list-item">
+                <div class="detail-list-bullet">1</div>
+                <div class="detail-list-text">
+                  <strong data-id="Riset konten dan struktur informasi" data-en="Content research and information structure">Riset konten dan struktur informasi</strong><span data-id=" — Mengumpulkan dan menyusun informasi utama seperti profil bandara, fasilitas, serta kebutuhan pengguna agar konten mudah dipahami dan terorganisir dengan baik." data-en=" — Collect and organize key information such as airport profiles, facilities, and user needs to ensure the content is easy to understand and well-organized."> — Mengumpulkan informasi
+                  akurat tentang Bandara Internasional Ahmad Yani: fasilitas, terminal, maskapai yang beroperasi,
+                  dan layanan yang tersedia.</span>
+                </div>
+              </div>
+              <div class="detail-list-item">
+                <div class="detail-list-bullet">2</div>
+                <div class="detail-list-text">
+                  <strong data-id="Perancangan navigasi sidebar" data-en="Sidebar navigation design">Perancangan navigasi sidebar</strong><span data-id=" — Mendesain struktur sidebar dengan kategori Informasi, Panduan, dan Layanan untuk memudahkan pengguna mengakses konten secara cepat dan terarah." data-en=" — Design a sidebar structure with Information, Guides, and Services categories to facilitate quick and targeted user access to content."> — Membangun markup yang bersih
+                  menggunakan elemen semantik HTML seperti header, nav, main, section, article,
+                  dan footer untuk aksesibilitas yang baik.</span>
+                </div>
+              </div>
+              <div class="detail-list-item">
+                <div class="detail-list-bullet">3</div>
+                <div class="detail-list-text">
+                  <strong data-id="Implementasi struktur HTML semantik" data-en="Semantic HTML structure implementation">Implementasi struktur HTML semantik</strong><span data-id=" — Membangun struktur halaman menggunakan elemen HTML yang rapi dan terstruktur agar mendukung aksesibilitas serta kemudahan pengembangan." data-en=" — Build page structures using neat and structured HTML elements to support accessibility and ease of development."> — Membangun struktur halaman
+                  menggunakan elemen HTML yang rapi dan terstruktur agar mendukung aksesibilitas serta kemudahan pengembangan.</span>
+                </div>
+              </div>
+              <div class="detail-list-item">
+                <div class="detail-list-bullet">4</div>
+                <div class="detail-list-text">
+                  <strong data-id="Styling dan layout responsif" data-en="Styling dan layout responsif">Styling dan layout responsif</strong><span data-id=" — Mengatur tampilan visual menggunakan CSS agar sidebar dan konten tetap rapi dan nyaman digunakan di berbagai ukuran layar." data-en=" — Adjust the visual appearance using CSS to keep the sidebar and content neat and comfortable to use on various screen sizes."> — Mengatur tampilan visual menggunakan CSS agar sidebar dan konten tetap rapi dan nyaman digunakan di berbagai ukuran layar.</span>
+                </div>
+              </div>
+              <div class="detail-list-item">
+                <div class="detail-list-bullet">5</div>
+                <div class="detail-list-text">
+                  <strong data-id="Interaktivitas dan pengujian" data-en="Interactivity and testing">Interaktivitas dan pengujian</strong><span data-id=" — Menambahkan interaksi sederhana seperti navigasi antar bagian serta memastikan semua fitur berjalan dengan baik melalui pengujian." data-en=" — Adding simple interactions like navigation between sections and ensuring all features work properly through testing."> — Menambahkan interaksi sederhana seperti navigasi antar bagian serta memastikan semua fitur berjalan dengan baik melalui pengujian.</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Alat & Teknologi -->
+          <article class="detail-card reveal">
+            <div class="detail-card-header">
+              <div class="detail-card-icon">
+                <i data-lucide="wrench"></i>
+              </div>
+              <h2 data-id="Alat &amp; Teknologi" data-en="Tools &amp; Technologies">Alat &amp; Teknologi</h2>
+            </div>
+            <div class="detail-tools-grid">
+              <div class="detail-tool-chip">
+                <i data-lucide="code-2" class="chip-icon"></i> HTML
+              </div>
+              <div class="detail-tool-chip">
+                <i data-lucide="paintbrush" class="chip-icon"></i> CSS
+              </div>
+              <div class="detail-tool-chip">
+                <i data-lucide="zap" class="chip-icon"></i> JavaScript
+              </div>
+              <div class="detail-tool-chip">
+                <i data-lucide="code" class="chip-icon"></i> VS Code
+              </div>
+              <div class="detail-tool-chip">
+                <i data-lucide="cat" class="chip-icon"></i> GitHub
+              </div>
+            </div>
+          </article>
+
+          <!--←←←←←←Pembelajaran Utama→→→→→→-->
+          <article class="detail-card reveal">
+            <div class="detail-card-header">
+              <div class="detail-card-icon">
+                <i data-lucide="lightbulb"></i>
+              </div>
+              <h2 data-id="Pembelajaran Utama" data-en="Key Learnings">Pembelajaran Utama</h2>
+            </div>
+            <div class="learning-grid">
+              <div class="learning-item">
+                <span class="learning-icon">
+                  <i data-lucide="layers" class="learning-lucide"></i>
+                </span>
+                <div class="learning-text">
+                  <strong data-id="Struktur Informasi" data-en="Information Structure">Struktur Informasi</strong>
+                  <span data-id="Belajar mengorganisir konten kompleks menjadi hierarki yang logis dan mudah dinavigasi oleh pengguna." data-en="Learning to organize complex content into a logical hierarchy that is easy for users to navigate.">Belajar mengorganisir konten kompleks menjadi hierarki yang logis dan
+                  mudah dinavigasi oleh pengguna.</span>
+                </div>
+              </div>
+              <div class="learning-item">
+                <span class="learning-icon">
+                  <i data-lucide="smartphone" class="learning-lucide"></i>
+                </span>
+                <div class="learning-text">
+                  <strong data-id="Responsive Design" data-en="Responsive Design">Responsive Design</strong>
+                  <span data-id="Memahami pentingnya desain yang bekerja di semua ukuran layar dan cara mengimplementasikannya dengan CSS media queries." data-en="Understanding the importance of design that works on all screen sizes and how to implement it with CSS media queries.">Memahami pentingnya desain yang bekerja di semua ukuran layar dan cara
+                  mengimplementasikannya dengan CSS media queries.</span>
+                </div>
+              </div>
+              <div class="learning-item">
+                <span class="learning-icon">
+                  <i data-lucide="accessibility" class="learning-lucide"></i>
+                </span>
+                <div class="learning-text">
+                  <strong data-id="Semantic HTML" data-en="Semantic HTML">Semantic HTML</strong>
+                  <span data-id="Menyadari bahwa HTML semantik bukan hanya soal SEO, tapi juga aksesibilitas bagi pengguna dengan kebutuhan khusus." data-en="Realizing that semantic HTML is not just about SEO, but also accessibility for users with special needs.">Menyadari bahwa HTML semantik bukan hanya soal SEO, tapi juga aksesibilitas
+                  bagi pengguna dengan kebutuhan khusus.</span>
+                </div>
+              </div>
+              <div class="learning-item">
+                <span class="learning-icon">
+                  <i data-lucide="refresh-cw" class="learning-lucide"></i>
+                </span>
+                <div class="learning-text">
+                  <strong data-id="Iterative Development" data-en="Iterative Development">Iterative Development</strong>
+                  <span data-id="Proses membangun, menguji, dan memperbaiki secara berulang menghasilkan produk yang jauh lebih baik daripada mencoba sempurna dari awal." data-en="The process of building, testing, and improving iteratively produces a far better product than trying to be perfect from the start.">Proses membangun, menguji, dan memperbaiki secara berulang menghasilkan
+                  produk yang jauh lebih baik daripada mencoba sempurna dari awal.</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dokumentasi Visual -->
+          <article class="detail-card reveal">
+            <div class="detail-card-header">
+              <div class="detail-card-icon">
+                <i data-lucide="image"></i>
+              </div>
+              <h2 data-id="Dokumentasi Visual" data-en="Visual Documentation">Dokumentasi Visual</h2>
+            </div>
+            <div class="visual-placeholder">
+              <div class="visual-placeholder-inner" style="background: linear-gradient(135deg, #e0f2fe, #f0f9ff);">
+                <i data-lucide="plane" style="width:40px;height:40px;color:var(--blue-300);"></i>
+                <p data-id="Screenshot Website Bandara Ahmad Yani" data-en="Ahmad Yani Airport Website Screenshot">Screenshot Website Bandara Ahmad Yani</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside class="detail-sidebar">
+
+          <div class="sidebar-card reveal">
+            <h3 data-id="Info Proyek" data-en="Project Info">Info Proyek</h3>
+            <div class="sidebar-stat">
+              <span class="sidebar-stat-label" data-id="Tahun" data-en="Year">Tahun</span>
+              <span class="sidebar-stat-value">2026</span>
+            </div>
+            <div class="sidebar-stat">
+              <span class="sidebar-stat-label" data-id="Tipe" data-en="Type">Tipe</span>
+              <span class="sidebar-stat-value" data-id="Tugas Sekolah" data-en="School Assignment">Tugas Sekolah</span>
+            </div>
+            <div class="sidebar-stat">
+              <span class="sidebar-stat-label" data-id="Stack" data-en="Stack">Stack</span>
+              <span class="sidebar-stat-value">HTML · CSS · JS</span>
+            </div>
+            <div class="sidebar-stat">
+              <span class="sidebar-stat-label" data-id="Subjek" data-en="Subject">Subjek</span>
+              <span class="sidebar-stat-value" data-id="Bandara Ahmad Yani" data-en="Ahmad Yani Airport">Bandara Ahmad Yani</span>
+            </div>
+            <div class="sidebar-stat">
+              <span class="sidebar-stat-label" data-id="Status" data-en="Status">Status</span>
+              <span class="sidebar-stat-value" data-id="Selesai" data-en="Completed">Selesai</span>
+            </div>
+          </div>
+
+          <div class="sidebar-card reveal">
+            <h3 data-id="Fitur Website" data-en="Website Features">Fitur Website</h3>
+            <div class="sidebar-tags">
+              <span class="sidebar-tag">Multi-page</span>
+              <span class="sidebar-tag">Responsive</span>
+              <span class="sidebar-tag">Navigation</span>
+              <span class="sidebar-tag">Info Fasilitas</span>
+              <span class="sidebar-tag">Jadwal</span>
+              <span class="sidebar-tag">Panduan</span>
+            </div>
+          </div>
+
+          <div class="sidebar-card reveal">
+            <h3 data-id="Proyek Lainnya" data-en="Other Projects">Proyek Lainnya</h3>
+            <div class="project-nav" style="flex-direction: column;">
+              <a href="project-owasp.html" class="project-nav-link">
+                <div class="project-nav-dir" data-id="Lihat Juga" data-en="See Also">Lihat Juga</div>
+                <div class="project-nav-title" data-id="Studi OWASP Security" data-en="OWASP Security Study">Studi OWASP Security</div>
+              </a>
+              <a href="project-network.html" class="project-nav-link">
+                <div class="project-nav-dir" data-id="Lihat Juga" data-en="See Also">Lihat Juga</div>
+                <div class="project-nav-title" data-id="Multi-Router Network" data-en="Multi-Router Network">Multi-Router Network</div>
+              </a>
+              <a href="project-wifi.html" class="project-nav-link">
+                <div class="project-nav-dir" data-id="Lihat Juga" data-en="See Also">Lihat Juga</div>
+                <div class="project-nav-title" data-id="Home WiFi Package" data-en="Home WiFi Package">Home WiFi Package</div>
+              </a>
+            </div>
+          </div>
+
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- BACK SECTION -->
+  <div class="back-section">
+    <div class="back-section-inner">
+      <div class="back-section-text">
+        <strong data-id="Selesai membaca?" data-en="Done reading?">Selesai membaca?</strong>
+        <span data-id="Kembali ke halaman utama untuk melihat proyek lainnya." data-en="Back to the main page to see other projects.">Kembali ke halaman utama untuk melihat proyek lainnya.</span>
+      </div>
+      <a href="index.html#projects" class="btn-back">
+        <i data-lucide="arrow-left" class="btn-icon"></i>
+        <span data-id="Kembali ke Portfolio" data-en="Back to Portfolio">Kembali ke Portfolio</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>Hanz<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-copy" data-id="© 2026 Hanz. Dibuat dengan ❤️ dan milo." data-en="© 2026 Hanz. Made with ❤️ and milo.">© 2026 Hanz. Dibuat dengan ❤️ dan milo.</p>
+      <div class="footer-links">
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="https://wa.me/6282240395092" aria-label="WhatsApp">WhatsApp</a>
+        <a href="mailto:pratomo.raihan@gmail.com" aria-label="Email">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="project-detail.js"></script>
+  <script src="lang.js"></script>
+  <script>
+    // Init Lucide icons after DOM is ready
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof lucide !== 'undefined') lucide.createIcons();
+    });
+  </script>
+</body>
+</html>

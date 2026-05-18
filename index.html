@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hanz - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!--NAVBAR-->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <div class="logo-container">
+  <span class="prompt">&gt;</span> Hanz
+</div>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <!-- Language Switcher -->
+      <div class="lang-switcher" id="langSwitcher">
+        <button class="lang-btn active" id="btnID" onclick="setLang('id')" aria-label="Bahasa Indonesia">ID</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" id="btnEN" onclick="setLang('en')" aria-label="English">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!--HERO SECTION-->
+    <section class="hero-wrapper" id="home">
+      <div class="hero-wrapper-bg"></div>
+      <div class="hero" aria-label="Hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-content">
+        <p class="hero-greeting reveal">
+          <i data-lucide="smile" class="icon-inline"></i> 
+          <span data-id="Halo, perkenalkan saya" 
+          data-en="Hello, let me introduce myself">
+          </span>
+        </p>
+        <h1 class="hero-name reveal">
+          Raihan Galih Bintang Pratama<span class="accent-dot">.</span>
+        </h1>
+        <div class="hero-role reveal">
+          <span class="role-badge" data-id="Student" data-en="Student">Student</span>
+          <span class="role-sep">|</span>
+          <span class="role-badge" data-id="Aspiring Cyber Security Analyst" data-en="Aspiring Cyber Security Analyst">Aspiring Cyber Security Analyst</span>
+        </div>
+        <p class="hero-tagline reveal" data-id="Tertarik pada teknologi, project digital, dan cybersecurity." data-en="Interested in technology, digital projects, and cybersecurity.">
+          Tertarik pada teknologi, project digital,<br class="hide-mobile"> dan cybersecurity.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn btn-primary" data-id="Lihat Project" data-en="View Projects">View Projects</a>
+          <a href="#contact" class="btn btn-outline" data-id="Contact Me" data-en="Contact Me">Contact Me</a>
+          <a href="/CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            <span data-id="Lihat CV" data-en="View CV">View CV</span>
+          </a>
+          <a href="/CV.pdf" download class="btn btn-download">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span data-id="Unduh CV" data-en="Download CV">Unduh CV</span>
+          </a>
+        </div>
+        <div class="hero-socials reveal">
+          <a href="https://github.com/DwellerNight" target="_blank" class="social-link" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://wa.me/6282240395092" class="social-link" target="_blank" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          </a>
+          <a href="mailto:pratomo.raihan@gmail.com" class="social-link" target="_blank" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="avatar-ring">
+          <div class="avatar-inner">
+            <img
+              src="Selfie.jpeg"
+              alt="Foto Saya"
+              class="avatar-photo"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <span class="avatar-fallback" aria-hidden="true"></span>
+          </div>
+        </div>
+        <div class="floating-chip chip-1">Cybersecurity</div>
+        <div class="floating-chip chip-2">Networking</div>
+        <div class="floating-chip chip-3">Linux</div>
+      </div>
+      <div class="hero-scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+      </div><!-- /.hero -->
+    </section><!-- /.hero-wrapper -->
+
+    <!--QUOTE SECTION-->
+    <section class="quote-section" aria-label="Kutipan pribadi">
+      <div class="container">
+        <blockquote class="personal-quote reveal">
+          <span class="quote-mark">"</span>
+          <span data-id="Terus belajar, terus berkembang." data-en="Keep learning, keep growing.">Terus belajar, terus berkembang.</span>
+          <span class="quote-mark">"</span>
+          <cite>— Raihan Galih Bintang Pratama</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!--ABOUT SECTION-->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag" data-id="Tentang Saya" data-en="About Me">Tentang Saya</span>
+          <h2 class="section-title" data-id="Siapa Raihan?" data-en="Who is Raihan?">Siapa Raihan?</h2>
+        </div>
+
+        <!--Intro-->
+        <div class="about-intro reveal">
+          <p data-id="Halo! Saya Raihan Galih Bintang Pratama, seorang siswa SMK Negeri 7 Semarang kelas 11 jurusan Sistem Jaringan Informasi dan Aplikasi yang memiliki ketertarikan besar di bidang teknologi. Mulai dari jaringan komputer, hingga cybersecurity. Saya percaya bahwa teknologi adalah alat yang tepat untuk menciptakan solusi nyata di dunia nyata." data-en="Hello! I'm Raihan Galih Bintang Pratama, an 11th-grade student at SMK Negeri 7 Semarang majoring in Information Network Systems and Applications with a strong interest in technology. From computer networking to cybersecurity. I believe technology is the right tool to create real solutions in the real world.">Halo! Saya <strong>Raihan Galih Bintang Pratama</strong>, seorang siswa SMK Negeri 7 Semarang kelas 11 jurusan Sistem Jaringan Informasi dan Aplikasi yang memiliki ketertarikan besar di bidang teknologi. Mulai dari jaringan komputer, hingga cybersecurity. Saya percaya bahwa teknologi adalah alat yang tepat untuk menciptakan solusi nyata di dunia nyata.</p>
+        </div>
+
+        <!--←←←←←←Data Pribadi & Pendidikan Raihan→→→→→→-->
+        <div class="about-info-row reveal">
+          <div class="about-info-card">
+            <div class="about-info-header">
+              <span class="about-info-icon">
+                <i data-lucide="id-card"></i>
+              </span>
+              <h3 data-id="Data Pribadi" data-en="Personal Data">Data Pribadi</h3>
+            </div>
+            <ul class="about-info-list">
+              <li>
+                <span class="info-label" data-id="Nama" data-en="Name">Nama</span>
+                <span class="info-value">Raihan Galih Bintang Pratama</span>
+              </li>
+              <li>
+                <span class="info-label" data-id="Lokasi" data-en="Location">Lokasi</span>
+                <span class="info-value">Semarang, Indonesia</span>
+              </li>
+              <li>
+                <span class="info-label" data-id="Email" data-en="Email">Email</span>
+                <span class="info-value">
+                  <a href="mailto:pratomo.raihan@gmail.com" class="info-link">pratomo.raihan@gmail.com</a>
+                </span>
+              </li>
+              <li>
+                <span class="info-label" data-id="Kontak" data-en="Contact">Kontak</span>
+                <span class="info-value">
+                  <a href="https://wa.me/6282240395092" class="info-link" target="_blank">+62 822-4039-5092</a>
+                </span>
+              </li>
+              <li>
+                <span class="info-label" data-id="Jabatan" data-en="Position">Jabatan</span>
+                <span class="info-value">Student · Aspiring Cyber Security Analyst</span>
+              </li>
+              <li>
+                <span class="info-label" data-id="Status" data-en="Status">Status</span>
+                <span class="info-value info-value--badge" data-id="Open to Internship / Learning Opportunities" data-en="Open to Internship / Learning Opportunities">Open to Internship / Learning Opportunities</span>
+              </li>
+              <li>
+                <span class="info-label" data-id="Bahasa" data-en="Languages">Bahasa</span>
+                <span class="info-value">Indonesia, English (Basic)</span>
+              </li>
+              <li>
+                <span class="info-label" data-id="Fokus" data-en="Focus">Fokus</span>
+                <span class="info-value">Cybersecurity, Networking, System Security</span>
+              </li>
+            </ul>
+          </div>
+          <div class="about-info-card edu-card">
+            <div class="about-info-header">
+              <span class="about-info-icon">
+                <i data-lucide="graduation-cap"></i>
+              </span>
+              <h3 data-id="Pendidikan" data-en="Education">Pendidikan</h3>
+            </div>
+            <div class="edu-timeline">
+
+              <!-- SD -->
+              <div class="edu-timeline-item">
+                <div class="edu-timeline-dot"></div>
+                <div class="edu-timeline-content">
+                  <div class="edu-school">SD Nasima</div>
+                  <div class="edu-year">2014 – 2020</div>
+                  <p class="edu-desc" data-id="Menempuh pendidikan dasar dengan fokus pada pembelajaran umum dan pengembangan dasar akademik." data-en="Completed basic education with focus on general learning and academic foundation development.">Menempuh pendidikan dasar dengan fokus pada pembelajaran umum dan pengembangan dasar akademik.</p>
+                </div>
+              </div>
+
+              <!-- SMP -->
+              <div class="edu-timeline-item">
+                <div class="edu-timeline-dot"></div>
+                <div class="edu-timeline-content">
+                  <div class="edu-school">SMP Negeri 2 Semarang</div>
+                  <div class="edu-year">2021 – 2023</div>
+                  <p class="edu-desc" data-id="Mulai tertarik pada teknologi dan komputer, serta mengembangkan kemampuan dasar dalam penggunaan perangkat digital." data-en="Started developing interest in technology and computers, and built basic skills in using digital devices.">Mulai tertarik pada teknologi dan komputer, serta mengembangkan kemampuan dasar dalam penggunaan perangkat digital.</p>
+                </div>
+              </div>
+
+              <!-- SMK -->
+              <div class="edu-timeline-item edu-timeline-item--active">
+                <div class="edu-timeline-dot edu-timeline-dot--active"></div>
+                <div class="edu-timeline-content">
+                  <div class="edu-school">SMK Negeri 7 Semarang</div>
+                  <div class="edu-major" data-id="Sistem Jaringan Informasi &amp; Aplikasi (SIJA)" data-en="Information Network Systems &amp; Applications (SIJA)">Sistem Jaringan Informasi &amp; Aplikasi (SIJA)</div>
+                  <div class="edu-year" data-id="2024 – SEKARANG (2026)" data-en="2024 – PRESENT (2026)">2024 – SEKARANG (2026)</div>
+                  <p class="edu-desc" data-id="Fokus pada jaringan komputer, konfigurasi MikroTik, subnetting, dan dasar keamanan siber. Aktif mempelajari konsep OWASP serta praktik keamanan sistem." data-en="Focus on computer networking, MikroTik configuration, subnetting, and cybersecurity basics. Actively studying OWASP concepts and system security practices.">Fokus pada jaringan komputer, konfigurasi MikroTik, subnetting, dan dasar keamanan siber. Aktif mempelajari konsep OWASP serta praktik keamanan sistem.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="about-grid">
+
+          <!--Keluarga Raihan-->
+          <div class="about-card reveal">
+            <div class="about-card-icon">
+              <i data-lucide="home"></i>
+            </div>
+            <h3 data-id="Keluarga" data-en="Family">Keluarga</h3>
+            <p data-id="Saya berasal dari keluarga sederhana di daerah Semarang, Indonesia. Dukungan keluarga menjadi fondasi utama semangat belajar saya. Keluarga mengajarkan nilai kerja keras dan rasa ingin tahu yang tinggi." data-en="I come from a humble family in Semarang, Indonesia. Family support is the main foundation of my learning spirit. Family taught me the values of hard work and high curiosity.">Saya berasal dari keluarga sederhana di daerah Semarang, Indonesia. Dukungan keluarga menjadi fondasi utama semangat belajar saya. Keluarga mengajarkan nilai kerja keras dan rasa ingin tahu yang tinggi.</p>
+          </div>
+
+          <!--Hobi Raihan-->
+          <div class="about-card reveal">
+            <div class="about-card-icon">
+              <i data-lucide="gamepad-2"></i>
+            </div>
+            <h3 data-id="Hobi" data-en="Hobbies">Hobi</h3>
+            <ul class="about-list">
+              <li data-id="Olahraga" data-en="Sports">Olahraga</li>
+              <li data-id="Bermain game" data-en="Playing games">Bermain game</li>
+              <li data-id="Belajar konsep baru di bidang IT" data-en="Learning new IT concepts">Belajar konsep baru di bidang IT</li>
+              <li data-id="Eksplorasi hardware & elektronik" data-en="Exploring hardware & electronics">Eksplorasi hardware & elektronik</li>
+            </ul>
+          </div>
+
+          <!--Minat Raihan-->
+          <div class="about-card reveal">
+            <div class="about-card-icon">
+              <i data-lucide="search"></i>
+            </div>
+            <h3 data-id="Minat" data-en="Interests">Minat</h3>
+            <div class="tag-group">
+              <span class="tag" data-id="Teknologi" data-en="Technology">Teknologi</span>
+              <span class="tag">Cybersecurity</span>
+              <span class="tag">Networking</span>
+              <span class="tag" data-id="Kreativitas Digital" data-en="Digital Creativity">Kreativitas Digital</span>
+              <span class="tag">Electronics</span>
+            </div>
+          </div>
+
+          <!--Soft Skills saat ini-->
+          <div class="about-card reveal">
+            <div class="about-card-icon">
+              <i data-lucide="brain"></i>
+            </div>
+            <h3 data-id="Soft Skills" data-en="Soft Skills">Soft Skills</h3>
+            <ul class="about-list">
+              <li data-id="Problem solving & analytical thinking" data-en="Problem solving & analytical thinking">Problem solving & analytical thinking</li>
+              <li data-id="Komunikasi yang jelas dan efektif" data-en="Clear and effective communication">Komunikasi yang jelas dan efektif</li>
+              <li data-id="Adaptasi cepat terhadap teknologi baru" data-en="Quick adaptation to new technology">Adaptasi cepat terhadap teknologi baru</li>
+              <li data-id="Kerja tim & kolaborasi" data-en="Teamwork & collaboration">Kerja tim & kolaborasi</li>
+              <li data-id="Ketekunan dan rasa ingin tahu tinggi" data-en="Perseverance and high curiosity">Ketekunan dan rasa ingin tahu tinggi</li>
+            </ul>
+          </div>
+
+          <!--Hard Skills saat ini-->
+          <div class="about-card reveal">
+            <div class="about-card-icon">
+              <i data-lucide="settings"></i>
+            </div>
+            <h3 data-id="Hard Skills" data-en="Hard Skills">Hard Skills</h3>
+            <ul class="about-list">
+              <li>Cybersecurity Fundamentals (OWASP Top 10, security misconfiguration)</li>
+              <li>Networking & static routing (MikroTik)</li>
+              <li>Linux Basics & Command Line</li>
+              <li data-id="HTML, CSS, JavaScript (dasar)" data-en="HTML, CSS, JavaScript (basics)">HTML, CSS, JavaScript (dasar)</li>
+              <li data-id="Subnetting & topologi jaringan" data-en="Subnetting & network topology">Subnetting & topologi jaringan</li>
+            </ul>
+          </div>
+
+          <!--Tujuan-->
+          <div class="about-card about-card-full reveal">
+            <div class="about-card-icon">
+              <i data-lucide="rocket"></i>
+            </div>
+            <h3 data-id="Tujuan ke Depan" data-en="Future Goals">Tujuan ke Depan</h3>
+            <p data-id="Saya ingin mengembangkan karir di bidang cybersecurity, khususnya dalam memahami dan menjaga keamanan sistem serta jaringan. Saat ini saya sedang fokus membangun fondasi yang kuat melalui pembelajaran dan praktik, dengan tujuan menjadi profesional yang mampu menganalisis dan menangani ancaman keamanan secara efektif." data-en="I want to build a career in cybersecurity, particularly in understanding and maintaining system and network security. Currently I am focused on building a strong foundation through learning and practice, with the goal of becoming a professional capable of effectively analyzing and handling security threats.">Saya ingin mengembangkan karir di bidang cybersecurity, khususnya dalam memahami dan menjaga keamanan sistem serta jaringan. Saat ini saya sedang fokus membangun fondasi yang kuat melalui pembelajaran dan praktik, dengan tujuan menjadi profesional yang mampu menganalisis dan menangani ancaman keamanan secara efektif.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--←←←←SKILLS SECTION→→→→-->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag" data-id="Kemampuan" data-en="Skills">Kemampuan</span>
+          <h2 class="section-title">Skills &amp; Tools</h2>
+        </div>
+
+        <div class="skills-wrapper">
+
+          <div class="skills-group reveal">
+            <h3 class="skills-group-title">
+              <span class="skills-group-icon">
+                <i data-lucide="laptop"></i>
+              </span> Technical Skills
+            </h3>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <i data-lucide="globe"></i>
+                </div>
+                <div class="skill-label-row">
+                  <span>HTML &amp; CSS (Layout &amp; Responsive)</span>
+                  <span class="skill-pct">45%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:45%"></div></div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <i data-lucide="network"></i>
+                </div>
+                <div class="skill-label-row">
+                  <span>Networking (Subnetting, Routing)</span>
+                  <span class="skill-pct">55%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:55%"></div></div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <i data-lucide="shield"></i>
+                </div>
+                <div class="skill-label-row">
+                  <span>Cybersecurity (OWASP Basics, Security Concepts)</span>
+                  <span class="skill-pct">60%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:60%"></div></div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <i data-lucide="terminal"></i>
+                </div>
+                <div class="skill-label-row">
+                  <span>Linux Basics (CLI, Basic Commands)</span>
+                  <span class="skill-pct">35%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:35%"></div></div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <i data-lucide="zap"></i>
+                </div>
+                <div class="skill-label-row">
+                  <span>JavaScript (Basic Logic &amp; DOM)</span>
+                  <span class="skill-pct">30%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:30%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-group reveal">
+            <h3 class="skills-group-title">
+              <span class="skills-group-icon">
+                <i data-lucide="wrench"></i>
+              </span> Tools
+            </h3>
+            <div class="tools-grid">
+              <div class="tool-chip">Wazuh</div>
+              <div class="tool-chip">Cisco CCNA</div>
+              <div class="tool-chip">VS Code</div>
+              <div class="tool-chip">GitHub</div>
+              <div class="tool-chip">Wireshark</div>
+              <div class="tool-chip">Linux (Kali Linux)</div>
+              <div class="tool-chip">Linux CLI / Terminal</div>
+              <div class="tool-chip">Networking Tools</div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!--←←←←←←PROJECTS SECTION→→→→→→-->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag" data-id="Karya" data-en="Works">Karya</span>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-desc" data-id="Beberapa project yang telah saya kerjakan selama perjalanan belajar." data-en="Some projects I've worked on throughout my learning journey.">Beberapa project yang telah saya kerjakan selama perjalanan belajar.</p>
+        </div>
+
+        <div class="projects-grid projects-grid--single">
+
+          <article class="project-card reveal">
+            <div class="project-thumb project-thumb-2">
+              <div class="project-thumb-icon">
+                <i data-lucide="plane"></i>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 data-id="Website Bandara Internasional Ahmad Yani" data-en="Ahmad Yani International Airport Website">Website Bandara Internasional Ahmad Yani</h3>
+              <p class="project-desc" data-id="Website informasi bandara dengan navigasi sidebar dan struktur konten terorganisir." data-en="Airport information website with sidebar navigation and organized content structure.">Website informasi bandara dengan navigasi sidebar dan struktur konten terorganisir.</p>
+              <div class="project-tags">
+                <span class="ptag">HTML</span>
+                <span class="ptag">CSS</span>
+                <span class="ptag">JavaScript</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://bandara-ahmadyani.infinityfreeapp.com/" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer" data-id="Lihat Demo" data-en="View Demo">
+                  <i data-lucide="external-link"></i>
+                  <span>Lihat Demo</span>
+                </a>
+                <a href="https://github.com/DwellerNight/Website-Bandara-Internasional-Ahmad-Yani.git" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer" data-id="Kode Sumber" data-en="Source Code">
+                  <i data-lucide="github"></i>
+                  <span>Kode Sumber</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!--←←←←←←CONTACT SECTION→→→→→→-->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag" data-id="Kontak" data-en="Contact">Kontak</span>
+          <h2 class="section-title" data-id="Mari Bekerja Sama" data-en="Let's Work Together">Mari Bekerja Sama
+            <i data-lucide="handshake"></i>
+          </h2>
+          <p class="section-desc" data-id="Punya ide project, pertanyaan, atau sekadar ingin berkenalan? Saya terbuka untuk itu!" data-en="Have a project idea, questions, or just want to connect? I'm open to it!">Punya ide project, pertanyaan, atau sekadar ingin berkenalan? Saya terbuka untuk itu!</p>
+        </div>
+
+        <div class="contact-wrapper">
+          <div class="contact-info reveal">
+            <div class="contact-info-block">
+              <h3 data-id="Hubungi Saya Via" data-en="Contact Me Via">Hubungi Saya Via</h3>
+              <a href="https://wa.me/6282240395092" class="contact-item" target="_blank" rel="noopener">
+                <div class="contact-item-icon wa">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                </div>
+                <div>
+                  <span class="contact-label">WhatsApp</span>
+                  <span class="contact-value">+62 822-4039-5092</span>
+                </div>
+              </a>
+              <a href="mailto:pratomo.raihan@gmail.com" class="contact-item" target="_blank">
+                <div class="contact-item-icon email">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </div>
+                <div>
+                  <span class="contact-label">Email</span>
+                  <span class="contact-value">pratomo.raihan@gmail.com</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="contact-info-block">
+              <h3 data-id="Lokasi" data-en="Location">Lokasi</h3>
+              <p data-id="📍 Semarang, Indonesia — Tersedia untuk kolaborasi remote" data-en="📍 Semarang, Indonesia — Available for remote collaboration">📍 Semarang, Indonesia<br>Tersedia untuk kolaborasi remote</p>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm">
+            <div class="form-group">
+              <label for="name" data-id="Nama Kamu" data-en="Your Name">Nama Kamu</label>
+              <input type="text" id="name" name="name" autocomplete="name" data-fs-field data-placeholder-id="Misalnya: Tarjo Abadi" data-placeholder-en="e.g.: John Doe" placeholder="Misalnya: Tarjo Abadi" required />
+            </div>
+            <div class="form-group">
+              <label for="email" data-id="Email (opsional)" data-en="Email (optional)">Email (opsional)</label>
+              <input type="email" id="email" name="email" autocomplete="email" data-fs-field data-placeholder-id="email@kamu.com" data-placeholder-en="your@email.com" placeholder="email@kamu.com" />
+            </div>
+            <div class="form-group">
+              <label for="message" data-id="Pesan" data-en="Message">Pesan</label>
+              <textarea id="message" name="message" autocomplete="off" data-fs-field rows="5" data-placeholder-id="Halo Raihan, saya ingin..." data-placeholder-en="Hello Raihan, I'd like to..." placeholder="Halo Raihan, saya ingin..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" data-id="Kirim Pesan " data-en="Send Message ">
+              Kirim Pesan
+            </button>
+            <p class="form-note" id="formNote"
+   data-success-id="✅ Pesan berhasil dikirim! Saya akan segera membalas."
+   data-success-en="✅ Message sent! I will get back to you soon."
+   data-error-id="❌ Gagal mengirim pesan. Silakan coba lagi."
+   data-error-en="❌ Failed to send message. Please try again.">
+</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--←←←←←←FOOTER→→→→→→-->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>Hanz<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-copy" data-id="© 2026 Hanz. All rights reserved." data-en="© 2026 Hanz. All rights reserved.">© 2026 Hanz. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/DwellerNight" target="_blank" aria-label="GitHub">GitHub</a>
+        <a href="https://wa.me/6282240395092" target="_blank" aria-label="WhatsApp">WhatsApp</a>
+        <a href="mailto:pratomo.raihan@gmail.com" target="_blank" aria-label="Email">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+  <script src="lang.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    lucide.createIcons();
+  });
+</script>
+</body>
+</html>
